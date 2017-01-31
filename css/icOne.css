@@ -1,3 +1,56 @@
 body, html {
   font-size: 12px;
+  background-color: #F9F9F9;
+}
+
+main {
+  min-height: 450px; /* Minimum height of page. */
+  padding: 10px; /* Move all content in main in by 10 pixels. */
+  margin-bottom: 20px;
+  border: 1px solid blue;
+}
+
+header {
+  border: 1px solid blue;
+  background-color: #E2E6E9;
+}
+
+footer {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+nav {
+  border: 1px solid blue;
+}
+
+nav ul {
+  /* Gets rid of the bullet points. Can be done on individual elements. */
+  list-style: none;
+
+}
+
+nav ul li {
+  display: inline-block; /* Put the list items side-by-side. */
+  width: 32%;
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none; /* Get rid of underline on links. */
+  color: blue; /* Make the links blue. */
+}
+
+nav ul li a:hover { /* Note: No hover on mobile. */
+  color: red; /* Makes links red when hovered over. */
+}
+
+.image-holder {
+  height: 450px;
+  /*
+   * Include a tiling background. Putting `no-repeat` after the url would
+   * prevent it from tiling, or have `repeat: no-repeat;` instead of the
+   * shorthand version.
+   */
+  background: url('https://www.ics.uci.edu/~eppstein/junkyard/sidtd.png') center;
 }
